@@ -1,0 +1,22 @@
+@use "../variaveis";
+
+.button{
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+
+    &--primary{
+        color: variaveis.$textColor;
+        background-color: variaveis.$purple;
+    }
+
+    @media (max-width: 640px){
+        display: block;
+        width: 100%;
+    }
+}

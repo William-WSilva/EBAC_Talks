@@ -7,21 +7,87 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
             <p class="hero__text">
-                O maior evento e tecnologia do brasil começa em 10d 12h 20m 15s
+                O maior evento e tecnologia do brasil começa em: <br>
+                <span id="contador"></span>
             </p>
+            <div class="infos_bar">
+                <ul class="infos_bar__infos">
+                    <li class="infos_bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos_bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos_bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2022 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
 
         </div>
-
     </header>
 
+    <section class="event event--frontend" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-End</h2>
+                <p class="event__details__description">
+                    O Front-end está muito relacionado com a interface gráfica do projeto. Ou seja, é onde se desenvolve a aplicação com a qual o usuário irá interagir diretamente, seja em softwares, sites, aplicativos, etc. Portanto, é essencial que o desenvolvedor tenha uma preocupação com a experiência do usuário.
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.jpg" alt="">
+        </div>
+    </section>
+    <section class="event event--image-left event--ux-ui" >
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Ux-Ui</h2>
+                <p class="event__details__description">
+                    UX é uma disciplina que estuda a experiência do usuário de um produto ou serviço, com o objetivo de estimular melhorias nos mesmos. A própria sigla já entrega esse significado, pois vem do inglês user experience, que significa justamente “experiência do usuário”.
+                </p>
+            </div>
+            <img class="event__image" src="./images/ui-ux1.png" alt="">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data-Science</h2>
+                <p class="event__details__description">
+                    Data Science é o estudo disciplinado dos dados e informações inerentes ao negócio e todas as visões que podem cercar um determinado assunto. É uma ciência que estuda as informações, seu processo de captura, transformação, geração e, posteriormente, análise de dados. A ciência de dados envolve diversas disciplinas:
+                </p>
+            </div>
+            <img class="event__image" src="./images/data_science.jpg" alt="">
+        </div>
+    </section>
+    <section class="event event--image-left event--backend">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-End</h2>
+                <p class="event__details__description">
+                    Back-end é tudo o que envolve como o projeto funciona, seja ele um site ou sistema. Ou seja, tudo o que o usuário não pode ver, como o banco de dados e também os servidores. Aqui também é onde entra a segurança, estrutura e gerenciamento de conteúdo.
+                </p>
+            </div>
+            <img class="event__image" src="./images/backend.jpg" alt="">
+        </div>
+    </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

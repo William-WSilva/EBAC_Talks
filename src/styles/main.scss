@@ -1,12 +1,17 @@
 @use "hero";
+@use "components/infos_bar.scss";
+@use "components/buttons.scss";
+@use "components/event";
+@use "variaveis";
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid gray;
-
+    color: variaveis.$textColor;
+    
 }
 
 .container{
